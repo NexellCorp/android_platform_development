@@ -125,13 +125,14 @@ public class Home extends Activity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
+        Log.e(LOG_TAG, "onCreate entered");
         setDefaultKeyMode(DEFAULT_KEYS_SEARCH_LOCAL);
 
         setContentView(R.layout.home);
 
         registerIntentReceivers();
 
-        setDefaultWallpaper();
+        // setDefaultWallpaper();
 
         loadApplications(true);
 
